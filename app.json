@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "cardapioon",
-    "slug": "cardapioon",
+    "name": "Daise Pizzas",
+    "slug": "daise-pizzas",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,17 +13,38 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "O aplicativo precisa acessar suas fotos para cadastrar produtos."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.jadergomesc.cardapioon",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O aplicativo precisa acessar suas fotos para cadastrar produtos."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "54622e56-0bde-401a-bf7e-253b67bde56c"
+      }
     }
   }
 }
