@@ -27,7 +27,7 @@ export default function AdminLoginScreen({ navigation, route }) {
       if (adminSnap.exists()) {
         setLoading(false);
         // redireciona conforme solicitado (normalmente AdminDashboard)
-        navigation.reset({ index: 0, routes: [{ name: redirectTo }] });
+        navigation.navigate('AdminDashboard');
       } else {
         await signOut(auth);
         setLoading(false);

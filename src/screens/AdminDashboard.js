@@ -89,7 +89,7 @@ export default function AdminDashboard({ navigation }) {
 
     produtosUnsubRef.current = onValue(produtosRef, async (snapshot) => {
       const data = snapshot.val();
-      console.log('🔥 Produtos brutos:', data);
+     
 
       if (!data || typeof data !== 'object') {
         setProdutos([]);
@@ -215,7 +215,7 @@ export default function AdminDashboard({ navigation }) {
                 <Image
                   source={{ uri: imageUri }}
                   style={styles.image}
-                  resizeMode="contain"
+                  resizeMode="cover"
                   onError={(e) => console.warn('Erro carregando imagem (AdminDashboard):', item.id, e.nativeEvent)}
                 />
                 <View style={{ flex: 1, marginLeft: 10 }}>

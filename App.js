@@ -43,6 +43,7 @@ export default function App() {
           <Stack.Screen name="AdminDashboard" component={AdminDashboard} />
           <Stack.Screen name="AdminProductForm" component={AdminProductForm} />
           
+          
         </Stack.Navigator>
       </NavigationContainer>
     </CarrinhoProvider>
