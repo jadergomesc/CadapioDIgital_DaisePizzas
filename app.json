@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Daise Pizzas",
-    "slug": "daise-pizzas",
+    "slug": "cardapioon",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,8 +26,9 @@
       "edgeToEdgeEnabled": true,
       "package": "com.jadergomesc.cardapioon",
       "permissions": [
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "web": {
@@ -45,6 +46,7 @@
       "eas": {
         "projectId": "54622e56-0bde-401a-bf7e-253b67bde56c"
       }
-    }
+    },
+    "owner": "jadergomesc"
   }
 }
